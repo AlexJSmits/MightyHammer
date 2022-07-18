@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 303115347692802628}
   - component: {fileID: 303115347692802631}
   - component: {fileID: 303115347692802630}
+  - component: {fileID: 7224079869178380707}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -108,7 +109,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4094030396542256990}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -226,8 +227,38 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 5
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &7224079869178380707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4094030396542256990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1849a1ebc0d5cbd449dae87d279a4393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftSummonReference: {fileID: 0}
+  rightSummonReference: {fileID: 0}
+  summonLightningReference: {fileID: 0}
+  leftHand: {fileID: 0}
+  rightHand: {fileID: 0}
+  lightning: {fileID: 0}
+  impactEffect: {fileID: 0}
+  returnSpeed: 0
+  returnSpin: 0
+  clips: []
+  velocityCap: 0
+  materials: []
+  layerIgnoringCollision:
+    serializedVersion: 2
+    m_Bits: 0
+  _ignoreCollisionLayer: 0
+  _hammerLayer: 0
+  _playerLayer: 0
